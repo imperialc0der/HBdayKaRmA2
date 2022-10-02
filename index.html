@@ -64,10 +64,32 @@ body {
 
 <h4 style="color:red;">Disclaimer:If the music isn't working for you, refresh or check permissions of music </h4>
 </div></center>
+<!--<script>
+
+setTimeout(() => { alert('Enjoy the music! ;)') }, 2400)</script> -->
+
+<!-- <iframe width="0" height="0" src="https://www.youtube.com/embed/K2aJTT29ZdU?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe -->
+<audio id="myAudio">
+  <source src="/home/rc/Downloads/sound.mp3" type="audio/mpeg">
+</audio>
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+</script>
 <script>
 
-setTimeout(() => { alert('Enjoy the music! ;)') }, 2400)</script>
-<iframe width="0" height="0" src="https://www.youtube.com/embed/K2aJTT29ZdU?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe
-
+    var result = confirm( "Do you want music?" );
+    
+    if ( result ) {
+        //  ok is  clicked
+        playAudio() & alert("Enjoy the music ;)")
+    } else {
+         alert("your wish ;)")
+    }
+</script>
 </body>
 </html>
