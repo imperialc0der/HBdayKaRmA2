@@ -29,11 +29,11 @@ img {
 
 div {
   background-color: black;
-  width: 400px;
+  width: 430px;
   border: 3px solid gray;
   padding: 50px;
   margin: 20px;
-  height: 400px;
+  height: 430px;
 }
 
 
@@ -61,8 +61,11 @@ body {
 
 
 <b><MARQUEE style="color:green;" SCROLLAMOUNT="5" ONMOUSEOUT="this.setAttribute('SCROLLAMOUNT', 3); this.start()" BEHAVIOR="scroll" >Next time meet kore trt na deowa porjonto eitai thakbe :3(even if u like it or not )</MARQUEE></b>
+<br/>
+<button onclick="playAudio()"><b>Click for a surprise</b></button>
 
 <h4 style="color:red;">Disclaimer:If the music isn't working for you, refresh or check permissions of music </h4>
+
 </div></center>
 <!--<script>
 
@@ -70,7 +73,7 @@ setTimeout(() => { alert('Enjoy the music! ;)') }, 2400)</script> -->
 
 <!-- <iframe width="0" height="0" src="https://www.youtube.com/embed/K2aJTT29ZdU?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe -->
 <audio id="myAudio">
-  <source src="sound.mp3" type="audio/mpeg">
+  <source src="/home/rc/Downloads/sound.mp3" type="audio/mpeg">
 </audio>
 <script>
 var x = document.getElementById("myAudio"); 
@@ -81,15 +84,7 @@ function playAudio() {
 
 </script>
 <script>
-
-    var result = confirm( "Do you want music?" );
-    
-    if ( result ) {
-        //  ok is  clicked
-        playAudio() & alert("Enjoy the music ;)")
-    } else {
-         alert("your wish ;)")
-    }
+alert("The button is interesting yk! ;)")
 </script>
 </body>
 </html>
